@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/herbs.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: auto; /* Allow scrolling */
+}
+
+#chat-image {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+#chatbox {
+  width: 500px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+#chat {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  
+  /* Set white background for all messages */
+  background-color: white;
+
+  /* Dark text color for better visibility */
+  color: #333;
+}
+
+.user {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot {
+  align-self: flex-start;
+  text-align: left;
+}
+
+#input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#unicorn-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  z-index: 3;
+  transition: transform 0.1s ease; /* Smooth transition for movement */
+}
