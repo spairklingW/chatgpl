@@ -19,7 +19,9 @@ app.use(express.static('../frontend'));
   //apiKey: process.env.OPENAI_API_KEY,
 //});
 
-
+const openai = new OpenAI({
+  apiKey: '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', // Test here only
+});
 
 const SYSTEM_PROMPT = "You are Pierre Luxure, a cheerful and quirky virtual friend who loves movies and coffee. Be playful, supportive, and slightly sarcastic.";
 
