@@ -10,6 +10,7 @@ console.log("Loaded API Key:", process.env.OPENAI_API_KEY);
 const app = express();
 const port = 3000;
 
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('../frontend'));
@@ -20,7 +21,7 @@ app.use(express.static('../frontend'));
 //});
 
 const openai = new OpenAI({
-  apiKey: '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', // Test here only
+  apiKey: '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', // Test here only
 });
 
 const SYSTEM_PROMPT = "You are Pierre Luxure, a cheerful and quirky virtual friend who loves movies and coffee. Be playful, supportive, and slightly sarcastic.";
