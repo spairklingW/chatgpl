@@ -2,10 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const OpenAI = require('openai');
+const { OpenAI } = require('openai');
 
 dotenv.config();
-console.log("Loaded API Key:", process.env.OPENAI_API_KEY);
+
+console.log('API Key:', process.env.OPENAI_API_KEY);
+
 
 const app = express();
 const port = 3000;
@@ -21,7 +23,7 @@ app.use(express.static('../frontend'));
 //});
 
 const openai = new OpenAI({
-  apiKey: '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', // Test here only
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 const SYSTEM_PROMPT = "You are Pierre Luxure, a cheerful and quirky virtual friend who loves movies and coffee. Be playful, supportive, and slightly sarcastic.";
