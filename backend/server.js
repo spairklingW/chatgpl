@@ -21,7 +21,7 @@ app.use(express.static('../frontend'));
 //});
 
 const openai = new OpenAI({
-  apiKey: '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', // Test here only
+  apiKey: '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', // Test here only
 });
 
 const SYSTEM_PROMPT = "You are Pierre Luxure, a cheerful and quirky virtual friend who loves movies and coffee. Be playful, supportive, and slightly sarcastic.";

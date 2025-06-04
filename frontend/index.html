@@ -12,7 +12,12 @@
   <!-- Chat Interface -->
   <div id="chatbox">
     <div id="chat"></div>
-    <input type="text" id="input" placeholder="Say something..." onkeydown="handleKey(event)">
+
+    <!-- Input + Button Container -->
+    <div id="input-container">
+      <input type="text" id="input" placeholder="Say something..." onkeydown="handleKey(event)">
+      <button id="send-button">Send</button>
+    </div>
   </div>
 
   <!-- Unicorn Image on the top-right -->
